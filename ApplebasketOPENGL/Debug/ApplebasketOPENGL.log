@@ -1,5 +1,6 @@
 ﻿  main_project.c
-c:\users\adrian\documents\visual studio 2015\projects\applebasketopengl\main_project.c(289): warning C4028: formal parameter 1 different from declaration
-c:\users\adrian\documents\visual studio 2015\projects\applebasketopengl\main_project.c(290): warning C4028: formal parameter 1 different from declaration
-  ApplebasketOPENGL.vcxproj -> C:\Users\Adrian\documents\visual studio 2015\Projects\ApplebasketOPENGL\Debug\ApplebasketOPENGL.exe
-  ApplebasketOPENGL.vcxproj -> C:\Users\Adrian\documents\visual studio 2015\Projects\ApplebasketOPENGL\Debug\ApplebasketOPENGL.pdb (Partial PDB)
+c:\users\adrian\documents\visual studio 2015\projects\applebasketopengl\main_project.c(250): warning C4013: 'sqrt' undefined; assuming extern returning int
+c:\users\adrian\documents\visual studio 2015\projects\applebasketopengl\main_project.c(421): warning C4028: formal parameter 1 different from declaration
+c:\users\adrian\documents\visual studio 2015\projects\applebasketopengl\main_project.c(422): warning C4028: formal parameter 1 different from declaration
+  ApplebasketOPENGL.vcxproj -> C:\Users\Adrian\Documents\Visual Studio 2015\Projects\ApplebasketOPENGL\Debug\ApplebasketOPENGL.exe
+  ApplebasketOPENGL.vcxproj -> C:\Users\Adrian\Documents\Visual Studio 2015\Projects\ApplebasketOPENGL\Debug\ApplebasketOPENGL.pdb (Partial PDB)
