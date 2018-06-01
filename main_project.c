@@ -114,10 +114,10 @@ void Desenareplan(void)
 	glTranslatef(0, 0, 2);
 	glRotatef(90, 1, 0, 0);
 	glBegin(GL_QUADS);
-	glVertex3f(500.0f, 3.0f, -500.0f);
-	glVertex3f(-500.0f, 3.0f, -500.0f);
-	glVertex3f(-500.0f, 3.0f, 500.0f);
-	glVertex3f(500.0f, 3.0f, 500.0f);
+	glVertex3f(800.0f, 1.5f, -800.0f);
+	glVertex3f(-800.0f, 1.5f, -800.0f);
+	glVertex3f(-800.0f, 1.5f, 800.0f);
+	glVertex3f(800.0f, 1.5f, 800.0f);
 	glEnd();
 	glPopMatrix();
 }
@@ -221,7 +221,7 @@ void DesenareMere(void)
 	glVertex3f(-0.0, -0.1, 0.4);
 	glEnd();
 	glPopMatrix();
-	
+
 }
 
 void calcCoeficinetiPlan(float P[3][3], float coef[4])
@@ -291,11 +291,11 @@ void MatriceUmbra(GLfloat puncte[3][3], GLfloat pozSursa[4], GLfloat mat[4][4])
 void CALLBACK display(void)
 {
 	GLfloat matUmbra[4][4];
-	
-	GLfloat puncte[3][3] = { 
-		{ 10.0f, -10.0f, 16.0f },
-		{ 8.0f,-16.0f,60.0f },
-		{ 20.0f,-10.0f,16.0f } };
+	GLfloat puncte[3][3] = {
+		{ -5.0f, -322.0f, -5.0f },
+		{ -5.0, 80.0f, 5.0 },
+		{ 5.0f, 80.0f, 5.0f }
+	};
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	MatriceUmbra(puncte, position_umbra, matUmbra);
 	glLoadIdentity();
@@ -352,7 +352,7 @@ void myinit(void)
 	//seteaza proprietatile de material pentru a urma glColor
 	glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
 	// seteaza sursa
-	
+
 	glLightfv(GL_LIGHT0, GL_AMBIENT, ambient);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuse);
 	glLightfv(GL_LIGHT0, GL_POSITION, position);
@@ -382,28 +382,27 @@ void CALLBACK myReshape(GLsizei w, GLsizei h)
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	if (w <= h)
-		glOrtho(-7.0, 7.0, -7.0*(GLfloat)h / (GLfloat)w, 7.0*(GLfloat)h / (GLfloat)w, -15.0, 15.0);
+		glOrtho(-9.0, 9.0, -9.0*(GLfloat)h / (GLfloat)w, 9.0*(GLfloat)h / (GLfloat)w, -18.0, 18.0);
 	else
-		glOrtho(-7.0*(GLfloat)w / (GLfloat)h, 7.0 * (GLfloat)w / (GLfloat)h, -7.0, 7.0, -15.0, 15.0);
+		glOrtho(-9.0*(GLfloat)w / (GLfloat)h, 9.0 * (GLfloat)w / (GLfloat)h, -9.0, 9.0, -18.0, 18.0);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 }
 
 /*
-void CALLBACK myReshape(GLsizei w, GLsizei h)
-{
-	if (!h) return;
-	glViewport(0, 0, w, h);
+void CALLBACK myReshape(int w, int h) {
+	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	if (w <= h)
-		glOrtho(-100.0, 100.0, -100.0*(GLfloat)h / (GLfloat)w,
-			100.0*(GLfloat)h / (GLfloat)w, -100.0, 100.0);
+		glOrtho(-100.0, 100.0, -100.0*(GLfloat)h / (GLfloat)w, 100.0*(GLfloat)h / (GLfloat)w, -500.0, 500.0);
 	else
-		glOrtho(-100.0*(GLfloat)w / (GLfloat)h,
-			100.0*(GLfloat)w / (GLfloat)h, -100.0, 100.0, -100.0, 100.0);
+		glOrtho(-100.0*(GLfloat)w / (GLfloat)h, 100 * (GLfloat)w / (GLfloat)h, -100.0, 100.0, -500.0, 500.0);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
+	glRotatef(-30, -1.0f, 1.0f, 1.0f);
+	gluPerspective(45.0, (float)w / (float)h, 100.0, 100.0);
+
 }*/
 
 int main(int argc, char** argv)
