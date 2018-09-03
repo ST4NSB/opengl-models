@@ -1,7 +1,7 @@
 ## Keyboard Interaction
 
 - Arrow keys to move camera
-- Space to play animation
+- Space to play animation (falling apple)
 - Mouse LB/RB to move the sun on the X axis
 
 ## Preview
