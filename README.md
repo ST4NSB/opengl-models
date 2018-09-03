@@ -4,9 +4,9 @@
 - Space to play animation
 - Mouse LB/RB to move the sun on the X axis
 
-**Used glut, glos, glaux libraries**
-
 ## Preview
+
+**Used glut, glos, glaux libraries**
 
 ![](https://i.imgur.com/Q3CDzED.jpg)
 
