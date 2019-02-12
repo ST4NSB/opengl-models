@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\adrian\documents\visual studio 2015\projects\opgl_land\opgl_land\main.cpp(340): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+  opgl_land.vcxproj -> c:\users\adrian\documents\visual studio 2015\Projects\opgl_land\Debug\opgl_land.exe
+  opgl_land.vcxproj -> c:\users\adrian\documents\visual studio 2015\Projects\opgl_land\Debug\opgl_land.pdb (Partial PDB)
