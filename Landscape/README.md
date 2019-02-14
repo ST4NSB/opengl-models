@@ -11,8 +11,8 @@
 
 ![](https://i.imgur.com/eQScRCs.jpg)
 
-![](https://imgur.com/gFiXOCI)
+![](https://i.imgur.com/gFiXOCI.jpg)
 
-![](https://imgur.com/iZTz8OJ)
+![](https://i.imgur.com/iZTz8OJ.jpg)
 
-![](https://imgur.com/5StzaY4)
+![](https://i.imgur.com/5StzaY4.jpg)
