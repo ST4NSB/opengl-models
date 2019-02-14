@@ -9,7 +9,7 @@
 
 ## Preview
 
-![](https://imgur.com/eQScRCs)
+![](https://i.imgur.com/eQScRCs.jpg)
 
 ![](https://imgur.com/gFiXOCI)
 
